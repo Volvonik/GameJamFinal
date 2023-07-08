@@ -5,13 +5,19 @@ using UnityEngine;
 
 public class ZombieMovement : MonoBehaviour
 {
-    public Rigidbody2D rb;
+    Rigidbody2D rb;
 
-    public float zombieSpeed = -70f;
+    public float zombieSpeed = -25f;
+    public float slowedSpeed = -15f;
 
     public bool isDead = false;
 
     public float zombieHealth = 12f;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     private void FixedUpdate()
     {
@@ -46,7 +52,7 @@ public class ZombieMovement : MonoBehaviour
         }
         if (other.tag == "BlueBullet")
         {
-            zombieSpeed = -40;
+            zombieSpeed = slowedSpeed;
             zombieHealth -= 1;
             Invoke("restorespeed", 3);
         }
