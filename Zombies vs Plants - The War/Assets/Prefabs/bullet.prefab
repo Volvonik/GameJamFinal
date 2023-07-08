@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -1143595546669740189}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: YellowBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 207f7ab2e03a3004fb12d73662a5d053, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -100,7 +100,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet_speed: 85
-  bullet: {fileID: 7182880164487063378}
   bulletHit: 0
 --- !u!50 &837856448221886492
 Rigidbody2D:

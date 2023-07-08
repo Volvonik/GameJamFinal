@@ -11,21 +11,11 @@ public class ZombieMovement : MonoBehaviour
 
     bool isDead = false;
 
-    public float eatTimer;
-    public float roundedEatTimer;
-
-    public float greenPlantEatingTime = 2f;
-    public float potatoEatingTime = 4f;
+    float zombieHealth = 12f;
 
     private void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
-    }
-
-    private void Update()
-    {
-        roundedEatTimer = Mathf.Round(eatTimer);
-        
     }
 
     private void FixedUpdate()
@@ -33,31 +23,36 @@ public class ZombieMovement : MonoBehaviour
         rb.velocity = new Vector2(zombieSpeed * Time.fixedDeltaTime, 0);
     }
 
-    private void OnCollisionStay2D(Collision2D other)
+    private void Update()
     {
-        if (isDead == false)
+        if (zombieHealth <= 0f)
         {
-            eatTimer += Time.deltaTime;
-            
-
-            //if (other.gameObject.tag == "Potato" && roundedEatTimer >= potatoEatingTime)
-            //{
-            //    Destroy(other.gameObject);
-            //}
-
-            //if (other.gameObject.tag == "GreenPlant" && roundedEatTimer >= greenPlantEatingTime)
-            //{
-            //    Destroy(other.gameObject);
-            //}
+            isDead = true;
         }
-        if (other.gameObject.tag == "house"){
-            Debug.Log("you won!");
+
+        if (isDead == true)
+        {
+            Kill();
         }
     }
 
-    private void OnCollisionExit2D(Collision2D other)
+    private void Kill()
     {
-        eatTimer = 0f;
+        print("Zombie Died!");
+        Destroy(gameObject);
     }
-    
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "YellowBullet")
+        {
+            zombieHealth -= 3f;
+            print(zombieHealth);
+        }
+
+        else if (other.tag == "House")
+        {
+            print("House Collision!");
+        }
+    }
 }

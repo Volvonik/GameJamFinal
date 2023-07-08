@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bulletspawner : MonoBehaviour
+public class BulletSpawnerScript : MonoBehaviour
 {
     
     public GameObject bullet;

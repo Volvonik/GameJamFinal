@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class potato_script : MonoBehaviour
+public class PotatoScript : MonoBehaviour
 {
     public float potato_health = 4f;
     // Start is called before the first frame update

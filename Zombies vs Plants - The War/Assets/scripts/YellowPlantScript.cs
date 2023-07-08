@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class green_plant_script : MonoBehaviour
+public class YellowPlantScript : MonoBehaviour
 {
         public float health = 2f;
     // Start is called before the first frame update

@@ -4,11 +4,17 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - logic
   - GreenPlant
   - Potato
   - bullet
   - house
+  - YellowBullet
+  - BlueBullet
+  - RedBullet
+  - House
+  - YellowPlant
+  - BluePlant
+  - RedPlant
   layers:
   - Default
   - TransparentFX
