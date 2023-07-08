@@ -5,40 +5,37 @@ using UnityEngine;
 public class PotatoScript : MonoBehaviour
 {
     public float potato_health = 4f;
-    private ParticleSystem particelSystem;
-    float ParticelTimer = 0.5f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        particelSystem = GetComponent<ParticleSystem>();
-        particelSystem.Stop();
 
-    }
+    public ParticleSystem eatingEffect;
 
-    // Update is called once per frame
-    void Update()
+    public ParticleSystem dieEffect;
+
+    private void OnCollisionStay2D(Collision2D collider)
     {
-        if (potato_health <= 0f){
-            Destroy(gameObject);
-        }
-        if (ParticelTimer >= 0.5f){
-            particelSystem.Stop();
-        }
-        ParticelTimer += Time.deltaTime;
-    }
-    private void OnCollisionStay2D(Collision2D collider){
-        if (collider.gameObject.tag == "Player"){
+        if (collider.gameObject.tag == "Player" || collider.gameObject.tag == "Zombie")
+        {
             potato_health -= Time.deltaTime;
-            //Debug.Log(health);
-            //var particelSystemMain = particelSystem.main;
-            //particelSystemMain.startLifeTime = 1f;
-            particelSystem.Play();
-            ParticelTimer = 0f;
-            
 
-
-
+            if (potato_health <= 0)
+            {
+                Die();
+            }
         }
     }
 
+    void Die()
+    {
+        eatingEffect.Stop();
+        dieEffect.Play();
+
+        Destroy(gameObject);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Zombie")
+        {
+            eatingEffect.Play();
+        }
+    }
 }
