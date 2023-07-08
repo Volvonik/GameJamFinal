@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BulletSpawnerScript : MonoBehaviour
 {
+    YellowPlantRangeDetector plantDetector;
+
     public GameObject bullet;
 
     public float spawnRate = 1f;
@@ -11,12 +13,17 @@ public class BulletSpawnerScript : MonoBehaviour
 
     void Start()
     {
+        plantDetector = FindObjectOfType<YellowPlantRangeDetector>();
+
         spawnRateTimer = 0f;
     }
 
     void Update()
     {
-        spawnRateTimer += Time.deltaTime;
+        if (plantDetector.yellowCanShoot == true)
+        {
+            spawnRateTimer += Time.deltaTime;
+        }
 
         if (spawnRateTimer >= spawnRate)
         {

@@ -10,7 +10,7 @@ public class BulletMovement : MonoBehaviour
 
     public float bullet_speed = 3f;
 
-    public float bulletRange = 4f;
+    public float bulletRange = 10f;
 
     public bool bulletHit = false;
 
