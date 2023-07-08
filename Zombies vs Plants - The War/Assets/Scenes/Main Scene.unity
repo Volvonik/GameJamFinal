@@ -1464,6 +1464,10 @@ PrefabInstance:
       propertyPath: myPlant
       value: 
       objectReference: {fileID: 1455415653}
+    - target: {fileID: 3044873479732450735, guid: 7d9e7f266e36e454b9150bf2e2fc57df, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a466e565a371b194eb2aaedf50e1702c, type: 2}
     - target: {fileID: 4630277928064398901, guid: 7d9e7f266e36e454b9150bf2e2fc57df, type: 3}
       propertyPath: m_RootOrder
       value: 5
