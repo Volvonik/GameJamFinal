@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class YellowPlantScript : MonoBehaviour
 {
+    public GameObject myPlant;
+
     public float health = 2f;
 
     void Update()
     {
         if (health <= 0f)
         {
-            Destroy(gameObject);
+            Destroy(myPlant);
         }
     }
     private void OnCollisionStay2D(Collision2D collision){

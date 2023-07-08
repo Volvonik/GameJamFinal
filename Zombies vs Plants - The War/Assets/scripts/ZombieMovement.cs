@@ -5,18 +5,13 @@ using UnityEngine;
 
 public class ZombieMovement : MonoBehaviour
 {
-    Rigidbody2D rb;
+    public Rigidbody2D rb;
 
     public float zombieSpeed = -70f;
 
     public bool isDead = false;
 
     float zombieHealth = 12f;
-
-    private void Start()
-    {
-        rb = gameObject.GetComponent<Rigidbody2D>();
-    }
 
     private void FixedUpdate()
     {

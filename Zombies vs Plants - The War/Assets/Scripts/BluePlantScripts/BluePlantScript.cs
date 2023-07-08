@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class BluePlantScript : MonoBehaviour
 {
+    public GameObject myPlant;
+
     public float blueHealth = 3f;
 
     void Update()
     {
         if (blueHealth <= 0f)
         {
-            Destroy(gameObject);
+            Destroy(myPlant);
         }
     }
     private void OnCollisionStay2D(Collision2D collision)

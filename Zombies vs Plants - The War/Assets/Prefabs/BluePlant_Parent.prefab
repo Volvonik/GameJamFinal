@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 4486471580635183526}
   - component: {fileID: 274215512780530508}
   - component: {fileID: 8117823854135070781}
-  - component: {fileID: 1238835121434068548}
+  - component: {fileID: 3396357795095677311}
   m_Layer: 6
   m_Name: BluePlant
   m_TagString: BluePlant
@@ -200,7 +200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blueHealth: 3
---- !u!70 &1238835121434068548
+--- !u!70 &3396357795095677311
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

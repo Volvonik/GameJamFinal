@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 3927836302214960843}
   - component: {fileID: 3044873479732450735}
   - component: {fileID: 1494666375081164435}
-  - component: {fileID: 569899600375887505}
+  - component: {fileID: 3432564380810606243}
   m_Layer: 0
   m_Name: YellowPlant
   m_TagString: YellowPlant
@@ -200,7 +200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
---- !u!70 &569899600375887505
+--- !u!70 &3432564380810606243
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
