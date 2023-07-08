@@ -31,7 +31,7 @@ Transform:
   - {fileID: 3724541051507081641}
   - {fileID: 5912160588180966741}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1944237314694092393
 GameObject:
@@ -77,6 +77,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be5d44d2f1f27594ebdaab9b6a316b0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zombiemovement: {fileID: 0}
   bullet: {fileID: 4212388119426524108, guid: eba0cbbffd386a140bd9b59a17cd6850, type: 3}
   spawnRate: 2
 --- !u!1 &8798082403089854753
@@ -199,6 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8be71e954bba06d4aae615431ad94e2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myPlant: {fileID: 449199965386562035}
   blueHealth: 3
 --- !u!70 &3396357795095677311
 CapsuleCollider2D:
