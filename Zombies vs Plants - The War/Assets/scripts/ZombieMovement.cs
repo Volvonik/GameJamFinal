@@ -39,15 +39,15 @@ public class ZombieMovement : MonoBehaviour
             eatTimer += Time.deltaTime;
             
 
-            if (other.gameObject.tag == "Potato" && roundedEatTimer >= potatoEatingTime)
-            {
-                Destroy(other.gameObject);
-            }
+            //if (other.gameObject.tag == "Potato" && roundedEatTimer >= potatoEatingTime)
+            //{
+            //    Destroy(other.gameObject);
+            //}
 
-            else if (other.gameObject.tag == "GreenPlant" && roundedEatTimer >= greenPlantEatingTime)
-            {
-                Destroy(other.gameObject);
-            }
+            //if (other.gameObject.tag == "GreenPlant" && roundedEatTimer >= greenPlantEatingTime)
+            //{
+            //    Destroy(other.gameObject);
+            //}
         }
     }
 

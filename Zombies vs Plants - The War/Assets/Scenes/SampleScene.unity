@@ -6693,6 +6693,7 @@ GameObject:
   - component: {fileID: 1479392156}
   - component: {fileID: 1479392155}
   - component: {fileID: 1479392154}
+  - component: {fileID: 1479392159}
   m_Layer: 0
   m_Name: green plant
   m_TagString: GreenPlant
@@ -6851,6 +6852,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1479392159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479392153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee034a0493558854db75b80fdb3d0cfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 2
 --- !u!1 &1827331367
 GameObject:
   m_ObjectHideFlags: 0
@@ -6862,6 +6876,7 @@ GameObject:
   - component: {fileID: 1827331370}
   - component: {fileID: 1827331369}
   - component: {fileID: 1827331368}
+  - component: {fileID: 1827331371}
   m_Layer: 0
   m_Name: Potato
   m_TagString: Potato
@@ -6971,3 +6986,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1827331371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827331367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72244db123a9f2b46bb215063a1f3fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potato_health: 4
