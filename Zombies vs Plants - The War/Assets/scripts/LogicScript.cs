@@ -6,6 +6,7 @@ public class LogicScript : MonoBehaviour
 {
     float tileWidth = 48f;
     float tileDistance;
+    public GameObject player;
 
     bool isDying = false;
 
@@ -24,5 +25,6 @@ public class LogicScript : MonoBehaviour
             isDying = false;
             //The zombie is not one block away from the plant
         }
+        
     }
 }
