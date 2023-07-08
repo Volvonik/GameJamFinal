@@ -4,24 +4,31 @@ using UnityEngine;
 
 public class bullet_script : MonoBehaviour
 {
-    // Start is called before the first frame update
     Rigidbody2D rb;
-    public float bullet_speed = 1f;
+
+    public float bullet_speed = 3f;
+
     public GameObject bullet;
+
+    public bool bulletHit = false;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
 
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         rb.velocity = new Vector2(bullet_speed * Time.fixedDeltaTime, 0);
     }
+
     private void OnTriggerEnter2D(Collider2D other){
-        if (other.tag == "Player"){
+        if (other.tag == "Player")
+        {
+            bulletHit = true;
             Destroy(gameObject);
+            bulletHit = false;
         }
         
         

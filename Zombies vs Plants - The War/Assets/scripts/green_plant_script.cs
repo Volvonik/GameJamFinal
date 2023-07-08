@@ -21,7 +21,6 @@ public class green_plant_script : MonoBehaviour
     private void OnCollisionStay2D(Collision2D collider){
         if (collider.gameObject.tag == "Player"){
             health -= Time.deltaTime;
-            //Debug.Log(health);
         }
     }
 }
