@@ -244,7 +244,7 @@ Animator:
   m_GameObject: {fileID: 197961495}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: dcb37be52eee72843bfe29a320314849, type: 2}
+  m_Controller: {fileID: 9100000, guid: 463ef2d952af4ba4e929eaee8abb7f30, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -572,11 +572,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1743194915491666224, guid: e71d6d222a400204794898bde3c763e8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.9
+      value: 3.219
       objectReference: {fileID: 0}
     - target: {fileID: 1743194915491666224, guid: e71d6d222a400204794898bde3c763e8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.725
+      value: -1.772
       objectReference: {fileID: 0}
     - target: {fileID: 1743194915491666224, guid: e71d6d222a400204794898bde3c763e8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1812,7 +1812,7 @@ Animator:
   m_GameObject: {fileID: 1761715085}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 463ef2d952af4ba4e929eaee8abb7f30, type: 2}
+  m_Controller: {fileID: 9100000, guid: dcb37be52eee72843bfe29a320314849, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1841,7 +1841,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1743194915491666224, guid: e71d6d222a400204794898bde3c763e8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.47
+      value: -0.555
       objectReference: {fileID: 0}
     - target: {fileID: 1743194915491666224, guid: e71d6d222a400204794898bde3c763e8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1952,3 +1952,64 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f5c5bbbb72d41e4195a22d8534acdfd, type: 3}
+--- !u!1001 &9026028790519724042
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 284127667689453287, guid: 8c600f90034c2744291a5b9a9bc838f0, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 284127667689453287, guid: 8c600f90034c2744291a5b9a9bc838f0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 284127667689453287, guid: 8c600f90034c2744291a5b9a9bc838f0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 284127667689453287, guid: 8c600f90034c2744291a5b9a9bc838f0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 284127667689453287, guid: 8c600f90034c2744291a5b9a9bc838f0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 284127667689453287, guid: 8c600f90034c2744291a5b9a9bc838f0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 284127667689453287, guid: 8c600f90034c2744291a5b9a9bc838f0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 284127667689453287, guid: 8c600f90034c2744291a5b9a9bc838f0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 284127667689453287, guid: 8c600f90034c2744291a5b9a9bc838f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 284127667689453287, guid: 8c600f90034c2744291a5b9a9bc838f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 284127667689453287, guid: 8c600f90034c2744291a5b9a9bc838f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6720105511329419153, guid: 8c600f90034c2744291a5b9a9bc838f0, type: 3}
+      propertyPath: m_Name
+      value: BluePlant_Spawner (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8c600f90034c2744291a5b9a9bc838f0, type: 3}
