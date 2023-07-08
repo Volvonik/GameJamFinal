@@ -99,7 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59832744e33d42a438f9cda93930777e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletSpawner: {fileID: 0}
   bullet_speed: 85
+  bulletRange: 2
   bulletHit: 0
 --- !u!50 &837856448221886492
 Rigidbody2D:
