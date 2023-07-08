@@ -25,6 +25,7 @@ public class ZombieMovement : MonoBehaviour
     private void Update()
     {
         roundedEatTimer = Mathf.Round(eatTimer);
+        
     }
 
     private void FixedUpdate()
