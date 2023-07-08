@@ -8,8 +8,6 @@ public class bullet_script : MonoBehaviour
 
     public float bullet_speed = 3f;
 
-    public GameObject bullet;
-
     public bool bulletHit = false;
 
     void Start()
