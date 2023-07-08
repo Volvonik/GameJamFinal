@@ -16,6 +16,7 @@ public class ZombieMovement : MonoBehaviour
 
     public float greenPlantEatingTime = 2f;
     public float potatoEatingTime = 4f;
+    
 
     private void Start()
     {
