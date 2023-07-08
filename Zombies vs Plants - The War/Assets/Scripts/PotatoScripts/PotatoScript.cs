@@ -10,24 +10,14 @@ public class PotatoScript : MonoBehaviour
 
     public ParticleSystem dieEffect;
 
-    ZombieMovement zombieMovement;
-
     void Start()
     {
-        zombieMovement = FindObjectOfType<ZombieMovement>();
+        //zombieMovement = FindObjectOfType<ZombieMovement>();
     }
 
-    private void Update()
+    private void OnCollisionStay2D(Collision2D collision)
     {
-        if (zombieMovement.isDead == true)
-        {
-            eatingEffect.Stop();
-        }
-    }
-
-    private void OnCollisionStay2D(Collision2D collider)
-    {
-        if (collider.gameObject.tag == "Player" || collider.gameObject.tag == "Zombie")
+        if (collision.gameObject.tag == "Zombie")
         {
             potato_health -= Time.deltaTime;
 
@@ -35,6 +25,14 @@ public class PotatoScript : MonoBehaviour
             {
                 Die();
             }
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Zombie")
+        {
+            eatingEffect.Stop();
         }
     }
 
