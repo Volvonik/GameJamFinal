@@ -29,28 +29,27 @@ public class BulletMovement : MonoBehaviour
 
         if (bulletPosition.x - spawnerPosition.x >= bulletRange)
         {
-            Debug.Log("No Targets");
-            Destroy(gameObject);
+            FadeOut();
         }
     }
 
-    private void Update()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (bulletHit == true)
-        {
-            bulletHit = false;
-            Destroy(gameObject);
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D other){
         if (other.tag == "Player")
         {
-            bulletHit = true;
+            Hit();
         }
-        
-        
     }
 
+    void FadeOut()
+    {
+        Debug.Log("No Targets");
+        Destroy(gameObject);
+    }
 
+    void Hit()
+    {
+        Debug.Log("Hit!");
+        Destroy(gameObject);
+    }
 }
