@@ -11,7 +11,7 @@ public class ZombieMovement : MonoBehaviour
 
     public bool isDead = false;
 
-    float zombieHealth = 12f;
+    public float zombieHealth = 12f;
 
     private void FixedUpdate()
     {
@@ -44,6 +44,12 @@ public class ZombieMovement : MonoBehaviour
             zombieHealth -= 3f;
             print(zombieHealth);
         }
+        if (other.tag == "BlueBullet")
+        {
+            zombieSpeed = -40;
+            zombieHealth -= 1;
+            Invoke("restorespeed", 3);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -52,5 +58,12 @@ public class ZombieMovement : MonoBehaviour
         {
             Debug.Log("House Collision!");
         }
+
+
+    }
+    
+    private void restorespeed()
+    {
+        zombieSpeed = -70;
     }
 }

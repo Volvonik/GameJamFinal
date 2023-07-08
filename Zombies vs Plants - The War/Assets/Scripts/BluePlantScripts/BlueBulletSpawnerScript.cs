@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BlueBulletSpawnerScript : MonoBehaviour
 {
+    public ZombieMovement zombiemovement;
+    
     public GameObject bullet;
 
     public float spawnRate = 1.7f;
@@ -12,6 +14,7 @@ public class BlueBulletSpawnerScript : MonoBehaviour
     void Start()
     {
         spawnRateTimer = 0f;
+        
     }
 
     void Update()
@@ -24,5 +27,14 @@ public class BlueBulletSpawnerScript : MonoBehaviour
 
             spawnRateTimer = 0f;
         }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        zombiemovement.zombieSpeed = -40;
+        zombiemovement.zombieHealth -= 1;
+    }
+    private void restorespeed()
+    {
+        zombiemovement.zombieSpeed = -70;
     }
 }
