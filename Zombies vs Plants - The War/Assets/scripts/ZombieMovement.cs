@@ -9,14 +9,13 @@ public class ZombieMovement : MonoBehaviour
 
     public float zombieSpeed = -70f;
 
-    bool isDead = false;
+    public bool isDead = false;
 
     float zombieHealth = 12f;
 
     private void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
-        transform.position = new Vector3(4.8f,-0.725f,0f);
     }
 
     private void FixedUpdate()

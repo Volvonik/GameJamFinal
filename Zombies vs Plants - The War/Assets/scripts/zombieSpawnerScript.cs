@@ -5,25 +5,24 @@ using UnityEngine;
 public class zombieSpawnerScript : MonoBehaviour
 {
     public GameObject zombie;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)){
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
           Vector3 MousePosition = Input.mousePosition;
+
           MousePosition.z = Camera.main.nearClipPlane +1;
+
           Vector3 worldPosition = Camera.main.ScreenToWorldPoint(MousePosition);
-          Instantiate(zombie,new Vector3(4.8f,Block(worldPosition.y),0), transform.rotation);
-          //Debug.Log("button pressed");
+
+          Instantiate(zombie, new Vector3(1f , Block(worldPosition.y), 0), transform.rotation);
         }
     }
-    float Block(float y){
-        if (y <= 2f && y > 1f){
+    float Block (float y)
+    {
+        if (y <= 2f && y > 1f)
+        {
             return 1.25f;
         }
         else if (y <=1f && y>0f)
@@ -42,10 +41,9 @@ public class zombieSpawnerScript : MonoBehaviour
         {
             return -2.725f;
         }
-        else{
+        else
+        {
             return -0.725f;
         }
-        
-            
     }
 }
