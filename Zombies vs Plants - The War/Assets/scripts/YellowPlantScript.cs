@@ -4,17 +4,12 @@ using UnityEngine;
 
 public class YellowPlantScript : MonoBehaviour
 {
-        public float health = 2f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float health = 2f;
 
-    // Update is called once per frame
     void Update()
     {
-        if (health <= 0f){
+        if (health <= 0f)
+        {
             Destroy(gameObject);
         }
     }

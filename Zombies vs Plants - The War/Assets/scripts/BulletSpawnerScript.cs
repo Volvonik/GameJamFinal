@@ -6,14 +6,16 @@ public class BulletSpawnerScript : MonoBehaviour
 {
     YellowPlantRangeDetector plantDetector;
 
+    public GameObject rangeDetector;
+
     public GameObject bullet;
 
-    public float spawnRate = 1f;
+    public float spawnRate = 1.7f;
     private float spawnRateTimer = 0f; 
 
     void Start()
     {
-        plantDetector = FindObjectOfType<YellowPlantRangeDetector>();
+        plantDetector = rangeDetector.GetComponent<YellowPlantRangeDetector>();
 
         spawnRateTimer = 0f;
     }
