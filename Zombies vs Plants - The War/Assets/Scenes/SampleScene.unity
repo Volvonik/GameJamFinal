@@ -6574,11 +6574,11 @@ CircleCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0036164224, y: -0.057979405}
+  m_Offset: {x: -0.01573284, y: 0.01}
   serializedVersion: 2
-  m_Radius: 0.48840398
+  m_Radius: 0.08206805
 --- !u!1 &1376393423
 GameObject:
   m_ObjectHideFlags: 0
