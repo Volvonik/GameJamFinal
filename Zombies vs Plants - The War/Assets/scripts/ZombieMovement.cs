@@ -49,10 +49,14 @@ public class ZombieMovement : MonoBehaviour
             //    Destroy(other.gameObject);
             //}
         }
+        if (other.gameObject.tag == "house"){
+            Debug.Log("you won!");
+        }
     }
 
     private void OnCollisionExit2D(Collision2D other)
     {
         eatTimer = 0f;
     }
+    
 }
