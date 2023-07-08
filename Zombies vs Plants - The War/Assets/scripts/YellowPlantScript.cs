@@ -13,8 +13,9 @@ public class YellowPlantScript : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    private void OnCollisionStay2D(Collision2D collider){
-        if (collider.gameObject.tag == "Player"){
+    private void OnCollisionStay2D(Collision2D collision){
+        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Zombie")
+        {
             health -= Time.deltaTime;
         }
     }

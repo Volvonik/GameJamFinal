@@ -49,10 +49,13 @@ public class ZombieMovement : MonoBehaviour
             zombieHealth -= 3f;
             print(zombieHealth);
         }
+    }
 
-        else if (other.tag == "House")
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "House")
         {
-            print("House Collision!");
+            Debug.Log("House Collision!");
         }
     }
 }
