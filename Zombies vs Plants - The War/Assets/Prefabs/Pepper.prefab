@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 2869514952636426948}
   - component: {fileID: 3882816460609977686}
   - component: {fileID: 8568775444111459291}
-  - component: {fileID: 3380042926949559582}
-  - component: {fileID: 4701607307702290168}
+  - component: {fileID: 1263567481735591371}
+  - component: {fileID: 6603168310097820031}
   m_Layer: 0
   m_Name: Pepper
   m_TagString: Pepper
@@ -34,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2869514952636426948
 SpriteRenderer:
@@ -144,7 +144,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.100352466}
   m_Size: {x: 0.6293292, y: 0.7688971}
   m_Direction: 0
---- !u!114 &3380042926949559582
+--- !u!114 &1263567481735591371
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -153,12 +153,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1077000208979700168}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5604951c5746fe64789277c1f59b447b, type: 3}
+  m_Script: {fileID: 11500000, guid: e2cde708e5635114ea60cec166794590, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
---- !u!58 &4701607307702290168
-CircleCollider2D:
+  damage: 13
+--- !u!70 &6603168310097820031
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -186,9 +187,9 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.07012377}
-  serializedVersion: 2
-  m_Radius: 0.78
+  m_Offset: {x: 0.10254899, y: -0.05999999}
+  m_Size: {x: 0.9350988, y: 0.7600023}
+  m_Direction: 1

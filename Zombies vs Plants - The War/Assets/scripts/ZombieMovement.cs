@@ -7,12 +7,17 @@ public class ZombieMovement : MonoBehaviour
 {
     Rigidbody2D rb;
 
+    public float regularSpeed = -25f;
     public float zombieSpeed = -25f;
     public float slowedSpeed = -15f;
 
     public bool isDead = false;
 
     public float zombieHealth = 12f;
+
+    public float yellowPlantDamage = 3f;
+    public float bluePlantDamage = 1f;
+    public float pepperDamage = 13f;
 
 
     private void Start()
@@ -48,14 +53,14 @@ public class ZombieMovement : MonoBehaviour
     {
         if (other.tag == "YellowBullet")
         {
-            TakeDamge(3f);
+            TakeDamage(yellowPlantDamage);
             print(zombieHealth);
         }
         if (other.tag == "BlueBullet")
         {
             zombieSpeed = slowedSpeed;
-            TakeDamge(1f);
-            Invoke("restorespeed", 3);
+            TakeDamage(bluePlantDamage);
+            Invoke("RestoreSpeed", 3);
         }
     }
 
@@ -65,15 +70,14 @@ public class ZombieMovement : MonoBehaviour
         {
             Debug.Log("House Collision!");
         }
-
-
     }
-    
-    private void restorespeed()
+
+    private void RestoreSpeed()
     {
-        zombieSpeed = -70;
+        zombieSpeed = -regularSpeed;
     }
-    public void TakeDamge(float damage){
+    public void TakeDamage(float damage)
+    {
         zombieHealth -= damage;
     }
 }
