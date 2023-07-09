@@ -23,12 +23,12 @@ public float tileDifference = 0.05f;
 
     private void Update()
     {
-        if (ZombieTypeDetector.selectedZombie == "regularZombie")
+        if (ZombieTypeDetector.selectedZombie == "RegularZombie")
         {
             currentZombie = regularZombie;
         }
 
-        else if (ZombieTypeDetector.selectedZombie == "shieldZombie")
+        else if (ZombieTypeDetector.selectedZombie == "ShieldZombie")
         {
             currentZombie = shieldZombie;
         }
@@ -50,9 +50,10 @@ public float tileDifference = 0.05f;
                 moneyscript.AddMoney(-40f); 
                 Instantiate(currentZombie, zombieSpawnPosition, transform.rotation);
             }
-            else if (currentZombie == regularZombie && moneyscript.money >= 40f)
+            else if (currentZombie == shieldZombie && moneyscript.money >= 70f)
             {
-                moneyscript.AddMoney(-80f);
+                Debug.Log("ShieldZombie");
+                moneyscript.AddMoney(-70f);
                 Instantiate(currentZombie, zombieSpawnPosition, transform.rotation);
             }
         }
