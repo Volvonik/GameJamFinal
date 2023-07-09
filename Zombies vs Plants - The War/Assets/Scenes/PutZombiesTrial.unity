@@ -4976,6 +4976,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Banana_Parent
       objectReference: {fileID: 0}
+    - target: {fileID: 1839274578038652379, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1839274578038652379, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3212983379620159105, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
       propertyPath: m_RootOrder
       value: 9

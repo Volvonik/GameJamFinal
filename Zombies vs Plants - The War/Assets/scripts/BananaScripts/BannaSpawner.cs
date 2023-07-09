@@ -6,11 +6,11 @@ public class BannaSpawner : MonoBehaviour
 {
     public GameObject bannaPell;
     public float bannaSpawnRate = 3f;
-
+    private float timer = 0f;
     // Start is called before the first frame update
     void Start()
     {
-        private float timer = 0f;
+        timer = 0f;
     }
 
     // Update is called once per frame

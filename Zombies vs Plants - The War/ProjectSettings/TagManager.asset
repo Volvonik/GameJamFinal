@@ -18,6 +18,7 @@ TagManager:
   - Mouse
   - Seperation
   - Banana
+  - BannaPeel
   layers:
   - Default
   - TransparentFX
