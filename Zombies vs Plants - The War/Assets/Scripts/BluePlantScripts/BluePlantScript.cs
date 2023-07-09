@@ -5,6 +5,8 @@ using UnityEngine;
 public class BluePlantScript : MonoBehaviour
 {
     public GameObject myPlant;
+    public MoneyScript ms;
+    public float BluePlantValue = 100f;
 
     public float blueHealth = 3f;
 
@@ -13,6 +15,7 @@ public class BluePlantScript : MonoBehaviour
         if (blueHealth <= 0f)
         {
             Destroy(myPlant);
+            ms.AddMoney(BluePlantValue);
         }
     }
     private void OnCollisionStay2D(Collision2D collision)

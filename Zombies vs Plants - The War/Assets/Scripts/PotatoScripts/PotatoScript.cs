@@ -5,10 +5,12 @@ using UnityEngine;
 public class PotatoScript : MonoBehaviour
 {
     public float potato_health = 4f;
+    public float PotatoValue = 30f;
 
     public ParticleSystem eatingEffect;
 
     public ParticleSystem dieEffect;
+    public MoneyScript mscript;
 
     void Start()
     {
@@ -40,6 +42,7 @@ public class PotatoScript : MonoBehaviour
     {
         eatingEffect.Stop();
         dieEffect.Play();
+        mscript.AddMoney(PotatoValue);
 
         Destroy(gameObject);
     }

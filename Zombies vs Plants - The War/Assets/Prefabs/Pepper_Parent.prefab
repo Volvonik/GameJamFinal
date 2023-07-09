@@ -9766,7 +9766,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: -428842646, guid: fbc54958909fd2647abe3da094a0fe1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9881,7 +9881,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2cde708e5635114ea60cec166794590, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moneyScript: {fileID: 0}
   health: 2
+  pepperValue: 20
   damage: 13
   dieEffect: {fileID: 1617991641690829480}
   eatingEffect: {fileID: 2686578138134683201}

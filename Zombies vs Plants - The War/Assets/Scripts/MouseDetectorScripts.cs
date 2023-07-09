@@ -11,6 +11,7 @@ public class MouseDetectorScripts : MonoBehaviour
     float spawnRateTimer = 1f;
 
     public GameObject regularZombie;
+    public MoneyScript moneyscript;
     public GameObject shieldZombie;
 
     GameObject currentZombie;
@@ -25,11 +26,14 @@ public class MouseDetectorScripts : MonoBehaviour
         if (ZombieTypeDetector.selectedZombie == "RegularZombie")
         {
             currentZombie = regularZombie;
+            moneyscript.AddMoney(-40f); 
         }
         else if (ZombieTypeDetector.selectedZombie == "ShieldZombie")
         {
             currentZombie = shieldZombie;
+            moneyscript.AddMoney(-80f);
         }
+        
 
         zombieSpawnPosition = new Vector3(transform.position.x, transform.position.y + tileDifference, transform.position.z);
 

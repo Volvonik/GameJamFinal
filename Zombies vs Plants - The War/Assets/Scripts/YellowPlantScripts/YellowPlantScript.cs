@@ -5,6 +5,8 @@ using UnityEngine;
 public class YellowPlantScript : MonoBehaviour
 {
     public GameObject myPlant;
+    public MoneyScript money_script;
+    public float YelowPlantValue = 50f;
 
     public float health = 2f;
 
@@ -13,6 +15,7 @@ public class YellowPlantScript : MonoBehaviour
         if (health <= 0f)
         {
             Destroy(myPlant);
+            money_script.AddMoney(YelowPlantValue);
         }
     }
     private void OnCollisionStay2D(Collision2D collision){

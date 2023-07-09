@@ -5,14 +5,19 @@ using UnityEngine;
 public class PepperTrial : MonoBehaviour
 {
     ZombieMovement zombieScript;
+    public MoneyScript moneyScript;
 
     public float health = 2f;
+    public float pepperValue = 20f;
 
     public float damage = 13f;
 
     public ParticleSystem dieEffect;
     public ParticleSystem eatingEffect;
 
+   
+    
+    
     private void Update()
     {
         if (health <= 0)
@@ -27,6 +32,7 @@ public class PepperTrial : MonoBehaviour
         eatingEffect.Stop();
 
         Destroy(gameObject);
+        moneyScript.AddMoney(pepperValue);
 
         zombieScript.TakeDamage(damage);
     }

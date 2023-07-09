@@ -6,7 +6,10 @@ public class BananaScript : MonoBehaviour
 {
     public GameObject myBanana;
     public ParticleSystem dieEffecct;
+    public GameObject BananaParent;
     public ParticleSystem eatingEffect;
+    public float BananaValue = 30f;
+    public MoneyScript moneys;
 
     public float health = 3f;
     void Update()
@@ -22,12 +25,16 @@ public class BananaScript : MonoBehaviour
         {
             health -= Time.deltaTime;
             eatingEffect.Play();
+            
         }
+        
+        
     }
     void Die()
     {
         eatingEffect.Stop();
         dieEffecct.Play();
+        moneys.AddMoney(BananaValue);
         Destroy(gameObject);
     }
         
