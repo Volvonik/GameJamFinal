@@ -216,6 +216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
+  moneyscript: {fileID: 0}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &155906105
 SpriteRenderer:
@@ -362,6 +363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
+  moneyscript: {fileID: 0}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &180535633
 SpriteRenderer:
@@ -1204,6 +1206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
+  moneyscript: {fileID: 0}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &728676729
 SpriteRenderer:
@@ -1350,6 +1353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
+  moneyscript: {fileID: 0}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &748512302
 SpriteRenderer:
@@ -1673,6 +1677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
+  moneyscript: {fileID: 0}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &852974653
 SpriteRenderer:
@@ -1819,6 +1824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
+  moneyscript: {fileID: 0}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &934989312
 SpriteRenderer:
@@ -2030,6 +2036,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
+  moneyscript: {fileID: 0}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &1026815659
 SpriteRenderer:
@@ -2176,6 +2183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
+  moneyscript: {fileID: 0}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &1027656910
 SpriteRenderer:
@@ -2399,6 +2407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
+  moneyscript: {fileID: 0}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &1063933313
 SpriteRenderer:
@@ -2545,6 +2554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
+  moneyscript: {fileID: 0}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &1065646506
 SpriteRenderer:
@@ -2691,6 +2701,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
+  moneyscript: {fileID: 0}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &1093733757
 SpriteRenderer:
@@ -2837,6 +2848,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
+  moneyscript: {fileID: 0}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &1108058489
 SpriteRenderer:
@@ -3558,6 +3570,51 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1213619388
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1213619390}
+  - component: {fileID: 1213619389}
+  m_Layer: 0
+  m_Name: MoneyManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1213619389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213619388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d2d23ceea804d24791790b6a7c6a786, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: 41
+--- !u!4 &1213619390
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213619388}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.754377, y: 1.7729964, z: -0.06929294}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1219306487
 GameObject:
   m_ObjectHideFlags: 0
@@ -3828,6 +3885,25 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1747634793615940099, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
   m_PrefabInstance: {fileID: 1811904807508959382}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1370188742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370188740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52f7545a6301e6b43af8ab4901faabd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myBanana: {fileID: 0}
+  dieEffecct: {fileID: 0}
+  BananaParent: {fileID: 0}
+  eatingEffect: {fileID: 0}
+  BananaValue: 30
+  moneys: {fileID: 0}
+  health: 3
 --- !u!1 &1401750026
 GameObject:
   m_ObjectHideFlags: 0
@@ -3971,18 +4047,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 894650497498899797, guid: 0a6ed89ba49e03f428ec5f266c14ebb7, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 894650497498899797, guid: 0a6ed89ba49e03f428ec5f266c14ebb7, type: 3}
-      propertyPath: m_SortingOrder
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 1077000208979700168, guid: 0a6ed89ba49e03f428ec5f266c14ebb7, type: 3}
       propertyPath: m_Name
       value: Pepper_Parent
       objectReference: {fileID: 0}
+    - target: {fileID: 2721274908175713465, guid: 0a6ed89ba49e03f428ec5f266c14ebb7, type: 3}
+      propertyPath: moneyScript
+      value: 
+      objectReference: {fileID: 1213619389}
     - target: {fileID: 5246510807574347880, guid: 0a6ed89ba49e03f428ec5f266c14ebb7, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -4125,6 +4197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
+  moneyscript: {fileID: 0}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &1474937847
 SpriteRenderer:
@@ -4484,6 +4557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
+  moneyscript: {fileID: 0}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &1591650885
 SpriteRenderer:
@@ -4747,6 +4821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
+  moneyscript: {fileID: 0}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &1628568895
 SpriteRenderer:
@@ -4898,6 +4973,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
+  moneyscript: {fileID: 0}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &1779841984
 SpriteRenderer:
@@ -5106,11 +5182,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6415428315001824253, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.915
+      value: 4.864
       objectReference: {fileID: 0}
     - target: {fileID: 6415428315001824253, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.45
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 6415428315001824253, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5536,6 +5612,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Banana_Parent
       objectReference: {fileID: 0}
+    - target: {fileID: 1747634793615940099, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3212983379620159105, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -5580,14 +5660,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4273892478875257143, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4689876313246100170, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
       propertyPath: m_SortingOrder
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4973239595281588196, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: health
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973239595281588196, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: moneys
+      value: 
+      objectReference: {fileID: 1213619389}
+    - target: {fileID: 4973239595281588196, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
       propertyPath: dieEffecct
       value: 
       objectReference: {fileID: 1689644821}
+    - target: {fileID: 4973239595281588196, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: BananaParent
+      value: 
+      objectReference: {fileID: 1370188740}
     - target: {fileID: 6367416364725363925, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
       propertyPath: myBanana
       value: 
@@ -5596,10 +5692,21 @@ PrefabInstance:
       propertyPath: dieEffecct
       value: 
       objectReference: {fileID: 1689644821}
+    - target: {fileID: 6453881986720128014, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: m_Size.x
+      value: 0.69116056
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453881986720128014, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.06465769
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1747634793615940099, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1370188742}
   m_SourcePrefab: {fileID: 100100000, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
 --- !u!1001 &3342901209671758264
 PrefabInstance:
@@ -5657,6 +5764,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8117823854135070781, guid: 97949d4601f16014e9ad3ad365a0e072, type: 3}
+      propertyPath: ms
+      value: 
+      objectReference: {fileID: 1213619389}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5714,6 +5825,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4814673277636285744, guid: 3f5c5bbbb72d41e4195a22d8534acdfd, type: 3}
+      propertyPath: mscript
+      value: 
+      objectReference: {fileID: 1213619389}
     - target: {fileID: 8452030471269741223, guid: 3f5c5bbbb72d41e4195a22d8534acdfd, type: 3}
       propertyPath: m_Name
       value: PotatoParent
@@ -5731,6 +5846,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1494666375081164435, guid: 7d9e7f266e36e454b9150bf2e2fc57df, type: 3}
+      propertyPath: money_script
+      value: 
+      objectReference: {fileID: 1213619389}
     - target: {fileID: 4630277928064398901, guid: 7d9e7f266e36e454b9150bf2e2fc57df, type: 3}
       propertyPath: m_RootOrder
       value: 5
