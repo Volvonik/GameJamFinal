@@ -61,6 +61,11 @@ public class ZombieMovement : MonoBehaviour
             TakeDamage(bluePlantDamage);
             Invoke("RestoreSpeed", 3);
         }
+        if (other.tag == "BannaPeel")
+        {
+            zombieSpeed = 0;
+            Invoke("RestoreSpeed",2);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -69,14 +74,20 @@ public class ZombieMovement : MonoBehaviour
         {
             Debug.Log("House Collision!");
         }
+        else if(collision.gameObject.tag == "BannaPeel")
+        {
+            zombieSpeed = 0;
+            Invoke("RestoreSpeed",50);
+        }
     }
 
-    private void RestoreSpeed()
+    public void RestoreSpeed()
     {
-        zombieSpeed = -regularSpeed;
+        zombieSpeed = regularSpeed;
     }
     public void TakeDamage(float damage)
     {
         zombieHealth -= damage;
     }
+    
 }

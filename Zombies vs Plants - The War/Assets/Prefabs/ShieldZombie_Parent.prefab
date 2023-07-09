@@ -80,7 +80,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 0.34762645, y: 0.7556087}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 10
 --- !u!50 &7531648977114396615
 Rigidbody2D:
   serializedVersion: 4
@@ -172,10 +172,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfdfb1bcb5cb6cf41b57c2679bf1ead2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  regularSpeed: -25
   zombieSpeed: -20
   slowedSpeed: -15
   isDead: 0
   zombieHealth: 18
+  yellowPlantDamage: 3
+  bluePlantDamage: 1
 --- !u!95 &2506083662729155545
 Animator:
   serializedVersion: 5
