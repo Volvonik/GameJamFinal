@@ -14,10 +14,7 @@ public class MoneyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (money < 0f)
-        {
-            money = 0f;
-        }
+        
     }
     public void AddMoney(float amount)
     {
