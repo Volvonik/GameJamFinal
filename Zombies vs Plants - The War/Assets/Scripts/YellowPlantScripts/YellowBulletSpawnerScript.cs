@@ -4,37 +4,32 @@ using UnityEngine;
 
 public class YellowBulletSpawnerScript : MonoBehaviour
 {
+    ZombieMovement zombieScript;
+
     public GameObject bullet;
 
     public float spawnRate = 1.7f;
-    private float spawnRateTimer = 0f;
-
-    AudioSource audioSource;
-    public AudioClip shootSFX;
+    private float spawnRateTimer = 0f; 
 
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        zombieScript = FindObjectOfType<ZombieMovement>();
 
         spawnRateTimer = 0f;
     }
 
     void Update()
     {
-        spawnRateTimer += Time.deltaTime;
+        if (zombieScript.canGetShot == true)
+        {
+            spawnRateTimer += Time.deltaTime;
+        }
 
         if (spawnRateTimer >= spawnRate)
         {
-            ShootBullet();
+            Instantiate(bullet, new Vector3(transform.position.x, transform.position.y, 0), transform.rotation);
+
+            spawnRateTimer = 0f;
         }
-    }
-
-    void ShootBullet()
-    {
-        audioSource.PlayOneShot(shootSFX);
-
-        Instantiate(bullet, new Vector3(transform.position.x, transform.position.y, 0), transform.rotation);
-
-        spawnRateTimer = 0f;
     }
 }

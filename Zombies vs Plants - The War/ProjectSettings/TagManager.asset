@@ -15,8 +15,6 @@ TagManager:
   - RangeDetector
   - Zombie
   - Pepper
-  - Mouse
-  - Seperation
   layers:
   - Default
   - TransparentFX

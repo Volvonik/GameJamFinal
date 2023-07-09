@@ -35,14 +35,9 @@ public class BulletMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Zombie")
+        if (other.tag == "Player" || other.tag == "Zombie")
         {
             Hit();
-        }
-
-        else if (other.tag == "Seperation")
-        {
-            FadeOut();
         }
     }
 
