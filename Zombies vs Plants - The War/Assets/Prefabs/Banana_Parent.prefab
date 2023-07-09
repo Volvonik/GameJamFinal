@@ -31,7 +31,7 @@ Transform:
   - {fileID: 7381271324723263905}
   - {fileID: 1839274578038652379}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6833332025988548601
 GameObject:
@@ -43,6 +43,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1839274578038652379}
   - component: {fileID: 5899037108335168226}
+  - component: {fileID: 4589625758232762359}
   m_Layer: 0
   m_Name: BananaSpawner
   m_TagString: Untagged
@@ -57,14 +58,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6833332025988548601}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0.259, y: 0.142, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3212983379620159105}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!82 &5899037108335168226
 AudioSource:
   m_ObjectHideFlags: 0
@@ -161,6 +162,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4589625758232762359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6833332025988548601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a204ffd313a96314c92f97d0125dbf62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bannaPell: {fileID: 4339791154919518234, guid: a4663d885cdb71a4abb953d988396bdc, type: 3}
 --- !u!1 &7842056630170257810
 GameObject:
   m_ObjectHideFlags: 0
