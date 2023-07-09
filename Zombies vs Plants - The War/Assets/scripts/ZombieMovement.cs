@@ -7,11 +7,11 @@ public class ZombieMovement : MonoBehaviour
 {
     Rigidbody2D rb;
     Animator anim;
-
+     
     public float regularSpeed = -25f;
     public float zombieSpeed = -25f;
     public float slowedSpeed = -15f;
-
+    public static won ;
     public bool isDead = false;
 
     public float zombieHealth = 12f;
@@ -37,10 +37,12 @@ public class ZombieMovement : MonoBehaviour
         if (zombieHealth <= 0f)
         {
             isDead = true;
+
         }
 
         if (isDead == true)
         {
+            winlos.ddeathCounter += 1;
             Kill();
         }
         if (zombieHealth <= 10f && gameObject.layer == 6)
