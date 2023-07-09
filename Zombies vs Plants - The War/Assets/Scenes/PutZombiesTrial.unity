@@ -481,7 +481,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &216840506
 GameObject:
@@ -1078,7 +1078,7 @@ GameObject:
   - component: {fileID: 588826881}
   - component: {fileID: 588826880}
   m_Layer: 0
-  m_Name: PotatoeEatingEffect
+  m_Name: Pepper_effecrt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1345,8 +1345,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 0.6792453, g: 0.51766753, b: 0.15699539, a: 1}
-      maxColor: {r: 0.9245283, g: 0.8297917, b: 0.37068352, a: 1}
+      minColor: {r: 0.16037738, g: 0.014933926, b: 0, a: 1}
+      maxColor: {r: 0.6509434, g: 0.015352436, b: 0.03736405, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -5887,12 +5887,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 588826879}
   m_LocalRotation: {x: -0, y: -0, z: 0.18813232, w: 0.9821437}
-  m_LocalPosition: {x: 1.63, y: -0.628, z: 0}
+  m_LocalPosition: {x: 4.661, y: -0.489, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 21.688}
 --- !u!1 &727438129
 GameObject:
@@ -14153,7 +14153,7 @@ RectTransform:
   - {fileID: 1401750027}
   - {fileID: 1219306488}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -14722,7 +14722,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1971928962
 GameObject:
