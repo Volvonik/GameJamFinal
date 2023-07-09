@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 611312903963511344}
   m_LocalRotation: {x: -0, y: -0, z: -0.046028882, w: 0.9989401}
   m_LocalPosition: {x: 0.037, y: 0.267, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3212983379620159105}
@@ -4855,7 +4855,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -4895,6 +4895,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3212983379620159105}
+  - component: {fileID: 2887473477862239658}
   m_Layer: 0
   m_Name: Banana_Parent
   m_TagString: Untagged
@@ -4919,8 +4920,27 @@ Transform:
   - {fileID: 275483998685888777}
   - {fileID: 889110883697451873}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2887473477862239658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747634793615940099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52f7545a6301e6b43af8ab4901faabd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myBanana: {fileID: 1747634793615940099}
+  dieEffecct: {fileID: 7807538197351165742}
+  BananaParent: {fileID: 1747634793615940099}
+  eatingEffect: {fileID: 5354794383599684823}
+  BananaValue: 30
+  moneys: {fileID: 0}
+  health: 3
 --- !u!1 &3811525754774002321
 GameObject:
   m_ObjectHideFlags: 0
@@ -4933,7 +4953,7 @@ GameObject:
   - component: {fileID: 5354794383599684823}
   - component: {fileID: 5608899476721893867}
   m_Layer: 0
-  m_Name: PotatoeEatingEffect
+  m_Name: bananaeEatingEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4947,7 +4967,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3811525754774002321}
   m_LocalRotation: {x: -0, y: -0, z: 0.18813232, w: 0.9821437}
-  m_LocalPosition: {x: 0.74799997, y: -1.126, z: 0}
+  m_LocalPosition: {x: -0.04, y: 0.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5143,8 +5163,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 0.6792453, g: 0.51766753, b: 0.15699539, a: 1}
-      maxColor: {r: 0.9245283, g: 0.8297917, b: 0.37068352, a: 1}
+      minColor: {r: 1, g: 0.9669688, b: 0.5330188, a: 1}
+      maxColor: {r: 1, g: 0.99142087, b: 0.1745283, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -10032,8 +10052,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0167014}
-  m_Size: {x: 0.820476, y: 0.9665972}
+  m_Offset: {x: -0.06465769, y: -0.0167014}
+  m_Size: {x: 0.69116056, y: 0.9665972}
   m_Direction: 0
 --- !u!114 &4973239595281588196
 MonoBehaviour:
@@ -10048,5 +10068,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myBanana: {fileID: 1747634793615940099}
-  dieEffecct: {fileID: 0}
-  health: 3
+  dieEffecct: {fileID: 7807538197351165742}
+  BananaParent: {fileID: 1747634793615940099}
+  eatingEffect: {fileID: 5354794383599684823}
+  BananaValue: 30
+  moneys: {fileID: 0}
+  health: 1
