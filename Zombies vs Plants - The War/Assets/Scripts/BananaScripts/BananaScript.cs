@@ -1,4 +1,4 @@
-using System.Collections;
+  using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -23,6 +23,7 @@ public class BananaScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "Zombie")
         {
+            eatingEffect.Play();
             health -= Time.deltaTime;
             eatingEffect.Play();
             

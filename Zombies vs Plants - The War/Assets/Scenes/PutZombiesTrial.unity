@@ -3897,12 +3897,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52f7545a6301e6b43af8ab4901faabd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myBanana: {fileID: 0}
-  dieEffecct: {fileID: 0}
-  BananaParent: {fileID: 0}
-  eatingEffect: {fileID: 0}
+  myBanana: {fileID: 1370188740}
+  dieEffecct: {fileID: 1689644821}
+  BananaParent: {fileID: 1370188740}
+  eatingEffect: {fileID: 1788804634}
   BananaValue: 30
-  moneys: {fileID: 0}
+  moneys: {fileID: 1213619389}
   health: 3
 --- !u!1 &1401750026
 GameObject:
@@ -5027,6 +5027,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!198 &1788804634 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5354794383599684823, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+  m_PrefabInstance: {fileID: 1811904807508959382}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1838372506
 GameObject:
   m_ObjectHideFlags: 0
@@ -5608,13 +5613,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 889110883697451873, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 889110883697451873, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 1747634793615940099, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
       propertyPath: m_Name
       value: Banana_Parent
       objectReference: {fileID: 0}
     - target: {fileID: 1747634793615940099, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3212983379620159105, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
       propertyPath: m_RootOrder
@@ -5660,6 +5673,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3811525754774002321, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: m_Name
+      value: bananaeEatingEffect
+      objectReference: {fileID: 0}
     - target: {fileID: 4273892478875257143, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
       propertyPath: m_FlipY
       value: 0
@@ -5684,6 +5701,34 @@ PrefabInstance:
       propertyPath: BananaParent
       value: 
       objectReference: {fileID: 1370188740}
+    - target: {fileID: 4973239595281588196, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: eatingEffect
+      value: 
+      objectReference: {fileID: 1788804634}
+    - target: {fileID: 5354794383599684823, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.1745283
+      objectReference: {fileID: 0}
+    - target: {fileID: 5354794383599684823, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.99142087
+      objectReference: {fileID: 0}
+    - target: {fileID: 5354794383599684823, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5354794383599684823, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: InitialModule.startColor.minColor.b
+      value: 0.5330188
+      objectReference: {fileID: 0}
+    - target: {fileID: 5354794383599684823, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: InitialModule.startColor.minColor.g
+      value: 0.9669688
+      objectReference: {fileID: 0}
+    - target: {fileID: 5354794383599684823, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: InitialModule.startColor.minColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6367416364725363925, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
       propertyPath: myBanana
       value: 
