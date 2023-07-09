@@ -1934,6 +1934,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7531648977114396615, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
+      propertyPath: m_Constraints
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2241,6 +2245,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 883306518941317290, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -88107572, guid: a9c38a6e6c20085479b07829c996f07a, type: 3}
+    - target: {fileID: 941866764730583605, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 463ef2d952af4ba4e929eaee8abb7f30, type: 2}
     - target: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
       propertyPath: m_Name
       value: ShieldZombie
@@ -2289,6 +2301,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7440586562743140541, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
+      propertyPath: newController
+      value: 
+      objectReference: {fileID: 9100000, guid: 463ef2d952af4ba4e929eaee8abb7f30, type: 2}
+    - target: {fileID: 7440586562743140541, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
+      propertyPath: oldController
+      value: 
+      objectReference: {fileID: 9100000, guid: 4d632db95010eeb4199316559238a4cd, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3860,6 +3880,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1370188740 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1747634793615940099, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+  m_PrefabInstance: {fileID: 1811904807508959382}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1370188742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370188740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52f7545a6301e6b43af8ab4901faabd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myBanana: {fileID: 1370188740}
+  dieEffecct: {fileID: 1689644821}
+  BananaParent: {fileID: 1370188740}
+  eatingEffect: {fileID: 1788804634}
+  BananaValue: 30
+  moneys: {fileID: 1213619389}
+  health: 3
 --- !u!1 &1401750026
 GameObject:
   m_ObjectHideFlags: 0
@@ -3914,7 +3958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 3
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -4831,6 +4875,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!198 &1689644821 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7807538197351165742, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+  m_PrefabInstance: {fileID: 1811904807508959382}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1779841980
 GameObject:
   m_ObjectHideFlags: 0
@@ -4978,6 +5027,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!198 &1788804634 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5354794383599684823, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+  m_PrefabInstance: {fileID: 1811904807508959382}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1838372506
 GameObject:
   m_ObjectHideFlags: 0
@@ -5555,14 +5609,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 275483998685888777, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 889110883697451873, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 889110883697451873, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 1747634793615940099, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
       propertyPath: m_Name
       value: Banana_Parent
       objectReference: {fileID: 0}
-    - target: {fileID: 2887473477862239658, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
-      propertyPath: moneys
-      value: 
-      objectReference: {fileID: 1213619389}
+    - target: {fileID: 1747634793615940099, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3212983379620159105, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -5607,14 +5673,85 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3811525754774002321, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: m_Name
+      value: bananaeEatingEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 4273892478875257143, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689876313246100170, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973239595281588196, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: health
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4973239595281588196, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
       propertyPath: moneys
       value: 
       objectReference: {fileID: 1213619389}
+    - target: {fileID: 4973239595281588196, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: dieEffecct
+      value: 
+      objectReference: {fileID: 1689644821}
+    - target: {fileID: 4973239595281588196, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: BananaParent
+      value: 
+      objectReference: {fileID: 1370188740}
+    - target: {fileID: 4973239595281588196, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: eatingEffect
+      value: 
+      objectReference: {fileID: 1788804634}
+    - target: {fileID: 5354794383599684823, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.1745283
+      objectReference: {fileID: 0}
+    - target: {fileID: 5354794383599684823, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.99142087
+      objectReference: {fileID: 0}
+    - target: {fileID: 5354794383599684823, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5354794383599684823, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: InitialModule.startColor.minColor.b
+      value: 0.5330188
+      objectReference: {fileID: 0}
+    - target: {fileID: 5354794383599684823, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: InitialModule.startColor.minColor.g
+      value: 0.9669688
+      objectReference: {fileID: 0}
+    - target: {fileID: 5354794383599684823, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: InitialModule.startColor.minColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367416364725363925, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: myBanana
+      value: 
+      objectReference: {fileID: 1370188740}
+    - target: {fileID: 6367416364725363925, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: dieEffecct
+      value: 
+      objectReference: {fileID: 1689644821}
+    - target: {fileID: 6453881986720128014, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: m_Size.x
+      value: 0.69116056
+      objectReference: {fileID: 0}
+    - target: {fileID: 6453881986720128014, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.06465769
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1747634793615940099, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1370188742}
   m_SourcePrefab: {fileID: 100100000, guid: 0fd29474dddfd964baf16ca0cd59cd33, type: 3}
 --- !u!1001 &3342901209671758264
 PrefabInstance:
