@@ -50,9 +50,9 @@ public class ZombieMovement : MonoBehaviour
         {
             Kill();
         }
-        if (zombieHealth <= 10f && gameObject.tag == "ShieldZombie"){
+        if (zombieHealth <= 10f && gameObject.name == "ShieldZombie")
+        {
             anim.runtimeAnimatorController = oldController;
-
         }
         
         }
