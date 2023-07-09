@@ -22,12 +22,4 @@ public class BluePlantScript : MonoBehaviour
             blueHealth -= Time.deltaTime;
         }
     }
-
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Zombie")
-        {
-            Debug.Log("F8Ck");
-        }
-    }
 }

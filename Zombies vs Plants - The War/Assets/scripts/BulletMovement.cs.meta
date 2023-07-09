@@ -3,7 +3,14 @@ guid: 59832744e33d42a438f9cda93930777e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - hitSFX1: {fileID: 8300000, guid: 52854be0fa542854495a0e68e850435f, type: 3}
+  - hitSFX2: {fileID: 8300000, guid: 45bb3db4385619743956a16f7b22d859, type: 3}
+  - hitSFX3: {fileID: 8300000, guid: 5573f20cbba85db4fa5c4e2fe84e4915, type: 3}
+  - hitSFX4: {fileID: 8300000, guid: 1f1708252edd1a64ea7ec695713c3e51, type: 3}
+  - fadeSFX1: {fileID: 8300000, guid: b846ddddb5e1dac49a294fe34534cb6b, type: 3}
+  - fadeSFX2: {fileID: 8300000, guid: 74529578a71ac3542818abaedefa0f0e, type: 3}
+  - fadeSFX3: {fileID: 8300000, guid: 97734a40a38b9584cb863cf20ca6f562, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
