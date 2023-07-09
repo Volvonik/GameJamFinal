@@ -5866,6 +5866,10 @@ PrefabInstance:
       propertyPath: ms
       value: 
       objectReference: {fileID: 1213619389}
+    - target: {fileID: 8117823854135070781, guid: 97949d4601f16014e9ad3ad365a0e072, type: 3}
+      propertyPath: BluePlantValue
+      value: 101
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
