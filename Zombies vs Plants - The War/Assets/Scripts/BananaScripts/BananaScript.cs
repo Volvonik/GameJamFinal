@@ -5,13 +5,14 @@ using UnityEngine;
 public class BananaScript : MonoBehaviour
 {
     public GameObject myBanana;
+    public ParticleSystem dieEffecct;
 
     public float health = 3f;
     void Update()
     {
         if (health <= 0f)
         {
-            Destroy(myBanana);
+            Die();
         }
     }
     private void OnCollisionStay2D(Collision2D collision)
@@ -20,5 +21,12 @@ public class BananaScript : MonoBehaviour
         {
             health -= Time.deltaTime;
         }
+    }
+    void Die()
+    {
+        
+        dieEffecct.Play();
+
+        Destroy(myBanana);
     }
 }
