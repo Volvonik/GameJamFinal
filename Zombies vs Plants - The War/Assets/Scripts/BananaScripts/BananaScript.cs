@@ -12,8 +12,7 @@ public class BananaScript : MonoBehaviour
     {
         if (health <= 0f)
         {
-            Destroy(myBanana);
-            dieEffecct.Play();
+            Die();
         }
     }
     private void OnCollisionStay2D(Collision2D collision)
@@ -22,5 +21,12 @@ public class BananaScript : MonoBehaviour
         {
             health -= Time.deltaTime;
         }
+    }
+    void Die()
+    {
+        
+        dieEffecct.Play();
+
+        Destroy(myBanana);
     }
 }
