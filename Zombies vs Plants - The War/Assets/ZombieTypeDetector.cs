@@ -10,18 +10,18 @@ public class ZombieTypeDetector : MonoBehaviour
 
     public MoneyScript moneyScript;
 
-    public Text moneyText;
+    //public Text moneyText;
 
     float moneyAmount;
 
     void Start(){
-        moneyText = FindObjectOfType<AmountText>();
+        //moneyText = FindObjectOfType<AmountText>();
     }
     
     void Update()
     {
         moneyAmount =  moneyScript.money;
-        moneyText.text = "test";//moneyAmount.ToString();
+        //moneyText.text = "test";//moneyAmount.ToString();
         Debug.Log(moneyText.text);
     }
 

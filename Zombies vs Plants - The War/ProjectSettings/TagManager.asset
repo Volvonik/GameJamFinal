@@ -20,6 +20,7 @@ TagManager:
   - Banana
   - BannaPeel
   - ShieldZombie
+  - text
   layers:
   - Default
   - TransparentFX
