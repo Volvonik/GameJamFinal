@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class YellowBulletSpawnerScript : MonoBehaviour
 {
-    ZombieMovement zombieScript;
-
     public GameObject bullet;
 
     public float spawnRate = 1.7f;
@@ -13,17 +11,12 @@ public class YellowBulletSpawnerScript : MonoBehaviour
 
     void Start()
     {
-        zombieScript = FindObjectOfType<ZombieMovement>();
-
         spawnRateTimer = 0f;
     }
 
     void Update()
     {
-        if (zombieScript.canGetShot == true)
-        {
-            spawnRateTimer += Time.deltaTime;
-        }
+        spawnRateTimer += Time.deltaTime;
 
         if (spawnRateTimer >= spawnRate)
         {

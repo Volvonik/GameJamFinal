@@ -14,8 +14,6 @@ public class ZombieMovement : MonoBehaviour
 
     public float zombieHealth = 12f;
 
-    public bool canGetShot = false;
-
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -57,10 +55,6 @@ public class ZombieMovement : MonoBehaviour
             zombieSpeed = slowedSpeed;
             zombieHealth -= 1;
             Invoke("restorespeed", 3);
-        }
-        else if (other.tag == "Seperation")
-        {
-            canGetShot = true;
         }
     }
 
