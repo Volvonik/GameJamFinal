@@ -26,12 +26,10 @@ public class MouseDetectorScripts : MonoBehaviour
         if (ZombieTypeDetector.selectedZombie == "RegularZombie")
         {
             currentZombie = regularZombie;
-            //moneyscript.AddMoney(-40f); 
         }
         else if (ZombieTypeDetector.selectedZombie == "ShieldZombie")
         {
             currentZombie = shieldZombie;
-            //moneyscript.AddMoney(-80f);
         }
         
 
@@ -46,6 +44,17 @@ public class MouseDetectorScripts : MonoBehaviour
         {
             Instantiate(currentZombie, zombieSpawnPosition, transform.rotation);
             spawnTimer = 0f;
+            if (currentZombie == "RegularZombie")
+            {
+                moneyscript.AddMoney(-40f); 
+
+            }
+            else
+            {
+                moneyscript.AddMoney(-80f);
+
+
+            }
         }
     }
 }
