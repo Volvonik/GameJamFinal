@@ -4,26 +4,19 @@ using UnityEngine;
 
 public class BlueBulletSpawnerScript : MonoBehaviour
 {
-    ZombieMovement zombieScript;
-    
     public GameObject bullet;
 
     public float spawnRate = 1.7f;
-    private float spawnRateTimer = 0f; 
+    private float spawnRateTimer = 0f;
 
     void Start()
     {
-        zombieScript = FindObjectOfType<ZombieMovement>();
-
         spawnRateTimer = 0f;
     }
 
     void Update()
     {
-        if (zombieScript.canGetShot == true)
-        {
-            spawnRateTimer += Time.deltaTime;
-        }
+        spawnRateTimer += Time.deltaTime;
 
         if (spawnRateTimer >= spawnRate)
         {
