@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 using System;
 
 public class ZombieTypeDetector : MonoBehaviour
@@ -10,15 +10,19 @@ public class ZombieTypeDetector : MonoBehaviour
 
     public MoneyScript moneyScript;
 
-    public Text moneyText;
+    public TextMeshProUGUI moneyText;
 
-    float moneyAmount;
+    string moneyAmount;
+
+    private void Start()
+    {
+        moneyScript = FindAnyObjectByType<MoneyScript>();
+    }
 
     void Update()
     {
-        moneyAmount =  moneyScript.money;
-        moneyText.text = "test";//moneyAmount.ToString();
-        Debug.Log(moneyText.text);
+        moneyAmount =  moneyScript.money.ToString();
+        moneyText.text = moneyAmount;
     }
 
     public void Click(string zombieType)
