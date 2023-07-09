@@ -36,7 +36,13 @@ public class PepperTrial : MonoBehaviour
         if (collision.gameObject.tag == "Zombie")
         {
             health -= Time.deltaTime;
+        }
+    }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Zombie")
+        {
             eatingEffect.Play();
         }
     }
