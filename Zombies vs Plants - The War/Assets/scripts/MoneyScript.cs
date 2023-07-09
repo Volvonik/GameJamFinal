@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoneyScript : MonoBehaviour
 {
-    public float money = 41f;
+    public float money = 100f;
 
     public void AddMoney(float amount)
     {
