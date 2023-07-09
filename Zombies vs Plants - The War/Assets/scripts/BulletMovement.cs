@@ -14,6 +14,19 @@ public class BulletMovement : MonoBehaviour
 
     public bool bulletHit = false;
 
+    int randomNumber;
+
+    public AudioSource audioSource;
+
+    public AudioClip hitSFX1;
+    public AudioClip hitSFX2;
+    public AudioClip hitSFX3;
+    public AudioClip hitSFX4;
+
+    public AudioClip fadeSFX1;
+    public AudioClip fadeSFX2;
+    public AudioClip fadeSFX3;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -46,15 +59,47 @@ public class BulletMovement : MonoBehaviour
         }
     }
 
-    void FadeOut()
+    void Hit()
     {
-        Debug.Log("No Targets");
+        randomNumber = Random.Range(1, 4);
+
+        if (randomNumber == 1)
+        {
+            audioSource.PlayOneShot(hitSFX1);
+        }
+        else if (randomNumber == 2)
+        {
+            audioSource.PlayOneShot(hitSFX2);
+        }
+        else if (randomNumber == 3)
+        {
+            audioSource.PlayOneShot(hitSFX3);
+        }
+        else if (randomNumber == 4)
+        {
+            audioSource.PlayOneShot(hitSFX4);
+        }
+
         Destroy(gameObject);
     }
 
-    void Hit()
+    void FadeOut()
     {
-        Debug.Log("Hit!");
+        randomNumber = Random.Range(1, 3);
+
+        if (randomNumber == 1)
+        {
+            audioSource.PlayOneShot(fadeSFX1);
+        }
+        else if (randomNumber == 2)
+        {
+            audioSource.PlayOneShot(fadeSFX2);
+        }
+        else if (randomNumber == 3)
+        {
+            audioSource.PlayOneShot(fadeSFX3);
+        }
+
         Destroy(gameObject);
     }
 }
