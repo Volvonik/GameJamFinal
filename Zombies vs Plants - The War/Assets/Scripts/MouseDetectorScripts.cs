@@ -24,6 +24,10 @@ public class MouseDetectorScripts : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Instantiate(regularZombie, zombieSpawnPosition, transform.rotation);
+        if (spawnTimer >= spawnRateTimer)
+        {
+            Instantiate(regularZombie, zombieSpawnPosition, transform.rotation);
+            spawnTimer = 0f;
+        }
     }
 }
