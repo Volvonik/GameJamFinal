@@ -9,6 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/main_menu.unity
     guid: fc947302631fd514c9a48223c76ae7fc
   - enabled: 1
-    path: Assets/Scenes/Main Scene.unity
-    guid: 952293a1c3e4f304aadaed1617b54fa3
+    path: Assets/Scenes/Zvs.P_LevelOne.unity
+    guid: 35579d4f161130a46ba16d828da779a2
+  - enabled: 1
+    path: Assets/Scenes/Zvs.P_LevelTwo.unity
+    guid: 8c6b691b3ca1cc641b2887d3c10b5754
+  - enabled: 1
+    path: Assets/Scenes/Zvs.P_LevelThree.unity
+    guid: fa48e11a1482b244d95fcb1f412f8531
+  - enabled: 1
+    path: Assets/Scenes/Zvs.P_LevelFour.unity
+    guid: 64a4de2eeced8954796ceb8cfaa59da0
+  - enabled: 1
+    path: Assets/Scenes/you win.unity
+    guid: ad7bcf3c3055ceb459c28da41a31d1c7
   m_configObjects: {}
