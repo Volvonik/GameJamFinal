@@ -23,15 +23,15 @@ public class MouseDetectorScripts : MonoBehaviour
 
     private void Update()
     {
-        if (ZombieTypeDetector.selectedZombie == "RegularZombie")
+        if (ZombieTypeDetector.selectedZombie == "RegularZombie" && moneyscript.money >= 40f)
         {
             currentZombie = regularZombie;
         }
-        else if (ZombieTypeDetector.selectedZombie == "ShieldZombie")
+        else if (ZombieTypeDetector.selectedZombie == "ShieldZombie" && moneyscript.money >= 80f)
         {
             currentZombie = shieldZombie;
         }
-        
+
 
         zombieSpawnPosition = new Vector3(transform.position.x, transform.position.y + tileDifference, transform.position.z);
 
@@ -40,21 +40,18 @@ public class MouseDetectorScripts : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (spawnTimer >= spawnRateTimer)
-        {
-            Instantiate(currentZombie, zombieSpawnPosition, transform.rotation);
-            spawnTimer = 0f;
-            if (currentZombie == "RegularZombie")
+        if (mous)
+            if (spawnTimer >= spawnRateTimer && moneyscript.money >= 40f && currentZombie == regularZombie )
             {
+                Instantiate(currentZombie, zombieSpawnPosition, transform.rotation);
+                spawnTimer = 0f;
                 moneyscript.AddMoney(-40f); 
-
             }
-            else
+            if ( spawnTimer >= spawnRateTimer && moneyscript.money >= 80f && currentZombie == shieldZombie )
             {
-                moneyscript.AddMoney(-80f);
-
-
+                Instantiate(currentZombie, zombieSpawnPosition, transform.rotation);
+                spawnTimer = 0f;
+                moneyscript.AddMoney(-80f); 
             }
-        }
     }
 }
