@@ -19,6 +19,7 @@ TagManager:
   - Seperation
   - Banana
   - BannaPeel
+  - ShieldZombie
   layers:
   - Default
   - TransparentFX
