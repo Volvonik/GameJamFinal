@@ -7,8 +7,6 @@ public class ZombieMovement : MonoBehaviour
 {
     Rigidbody2D rb;
     Animator anim;
-    public RuntimeAnimatorController newController;
-    public RuntimeAnimatorController oldController;
 
     public float regularSpeed = -25f;
     public float zombieSpeed = -25f;
@@ -25,13 +23,8 @@ public class ZombieMovement : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
-        if (gameObject.tag == "ShieldZombie"){
-            anim.runtimeAnimatorController = oldController;
 
-        }
-        
-        
+        anim = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -50,9 +43,11 @@ public class ZombieMovement : MonoBehaviour
         {
             Kill();
         }
-        if (zombieHealth <= 10f && gameObject.name == "ShieldZombie")
+        if (zombieHealth <= 10f && gameObject.layer == 6)
         {
-            anim.runtimeAnimatorController = oldController;
+            anim.Play("NoShieldZombie");
+
+            zombieSpeed = -25f;
         }
         
         }

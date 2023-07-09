@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5302920801966307578}
   - component: {fileID: 4695682187083866451}
   - component: {fileID: 1185578343005094138}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ShieldZombie
   m_TagString: Zombie
   m_Icon: {fileID: 0}
@@ -34,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &993650690589410095
 SpriteRenderer:
@@ -172,8 +172,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfdfb1bcb5cb6cf41b57c2679bf1ead2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newController: {fileID: 9100000, guid: 463ef2d952af4ba4e929eaee8abb7f30, type: 2}
-  oldController: {fileID: 9100000, guid: 4d632db95010eeb4199316559238a4cd, type: 2}
   regularSpeed: -15
   zombieSpeed: -15
   slowedSpeed: -10
