@@ -103,7 +103,6 @@ MonoBehaviour:
   bullet_speed: 80
   bulletRange: 5
   bulletHit: 0
-  audioSource: {fileID: 6015878397463853250}
   hitSFX1: {fileID: 8300000, guid: 52854be0fa542854495a0e68e850435f, type: 3}
   hitSFX2: {fileID: 8300000, guid: 45bb3db4385619743956a16f7b22d859, type: 3}
   hitSFX3: {fileID: 8300000, guid: 5573f20cbba85db4fa5c4e2fe84e4915, type: 3}
@@ -122,7 +121,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

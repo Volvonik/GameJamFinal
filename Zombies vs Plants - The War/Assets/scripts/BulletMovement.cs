@@ -16,7 +16,7 @@ public class BulletMovement : MonoBehaviour
 
     int randomNumber;
 
-    public AudioSource audioSource;
+    AudioSource audioSource;
 
     public AudioClip hitSFX1;
     public AudioClip hitSFX2;
@@ -32,6 +32,11 @@ public class BulletMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         spawnerPosition = transform.position;
+    }
+
+    private void Update()
+    {
+        audioSource = GetComponent<AudioSource>();
     }
 
     void FixedUpdate()

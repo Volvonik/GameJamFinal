@@ -13,7 +13,12 @@ public class MouseDetectorScripts : MonoBehaviour
     public GameObject regularZombie;
     public GameObject shieldZombie;
 
-    public GameObject currentZombie;
+    GameObject currentZombie;
+
+    private void Start()
+    {
+        currentZombie = regularZombie;
+    }
 
     private void Update()
     {

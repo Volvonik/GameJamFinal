@@ -6,6 +6,9 @@ using UnityEngine;
 public class ZombieMovement : MonoBehaviour
 {
     Rigidbody2D rb;
+    Animator anim;
+    public RuntimeAnimatorController newController;
+    public RuntimeAnimatorController oldController;
 
     public float regularSpeed = -25f;
     public float zombieSpeed = -25f;
@@ -22,6 +25,13 @@ public class ZombieMovement : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        if (gameObject.tag == "ShieldZombie"){
+            anim.runtimeAnimatorController = oldController;
+
+        }
+        
+        
     }
 
     private void FixedUpdate()
@@ -40,7 +50,12 @@ public class ZombieMovement : MonoBehaviour
         {
             Kill();
         }
-    }
+        if (zombieHealth <= 10f && gameObject.tag == "ShieldZombie"){
+            anim.runtimeAnimatorController = oldController;
+
+        }
+        
+        }
 
     private void Kill()
     {
