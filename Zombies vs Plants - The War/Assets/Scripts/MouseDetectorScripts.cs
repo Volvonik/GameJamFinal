@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MouseDetectorScripts : MonoBehaviour
 {
-    public float tileDifference = 0.05f;
+public float tileDifference = 0.05f;
     Vector3 zombieSpawnPosition;
 
     float spawnTimer;
@@ -23,11 +23,12 @@ public class MouseDetectorScripts : MonoBehaviour
 
     private void Update()
     {
-        if (ZombieTypeDetector.selectedZombie == "RegularZombie" && moneyscript.money >= 40f)
+        if (ZombieTypeDetector.selectedZombie == "regularZombie")
         {
             currentZombie = regularZombie;
         }
-        else if (ZombieTypeDetector.selectedZombie == "ShieldZombie" && moneyscript.money >= 80f)
+
+        else if (ZombieTypeDetector.selectedZombie == "shieldZombie")
         {
             currentZombie = shieldZombie;
         }
@@ -40,18 +41,23 @@ public class MouseDetectorScripts : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (mous)
-            if (spawnTimer >= spawnRateTimer && moneyscript.money >= 40f && currentZombie == regularZombie )
+        if (spawnTimer >= spawnRateTimer)
+        {
+
+            spawnTimer = 0f;
+            if (currentZombie == regularZombie && moneyscript.money >= 40f)
             {
-                Instantiate(currentZombie, zombieSpawnPosition, transform.rotation);
-                spawnTimer = 0f;
                 moneyscript.AddMoney(-40f); 
-            }
-            if ( spawnTimer >= spawnRateTimer && moneyscript.money >= 80f && currentZombie == shieldZombie )
-            {
                 Instantiate(currentZombie, zombieSpawnPosition, transform.rotation);
-                spawnTimer = 0f;
-                moneyscript.AddMoney(-80f); 
             }
+            else if (currentZombie == regularZombie && moneyscript.money >= 40f)
+            {
+                moneyscript.AddMoney(-80f);
+                Instantiate(currentZombie, zombieSpawnPosition, transform.rotation);
+            }
+        }
+    
+
     }
 }
+

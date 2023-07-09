@@ -216,7 +216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
-  moneyscript: {fileID: 0}
+  moneyscript: {fileID: 1213619389}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &155906105
 SpriteRenderer:
@@ -363,7 +363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
-  moneyscript: {fileID: 0}
+  moneyscript: {fileID: 1213619389}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &180535633
 SpriteRenderer:
@@ -1206,7 +1206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
-  moneyscript: {fileID: 0}
+  moneyscript: {fileID: 1213619389}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &728676729
 SpriteRenderer:
@@ -1353,7 +1353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
-  moneyscript: {fileID: 0}
+  moneyscript: {fileID: 1213619389}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &748512302
 SpriteRenderer:
@@ -1677,7 +1677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
-  moneyscript: {fileID: 0}
+  moneyscript: {fileID: 1213619389}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &852974653
 SpriteRenderer:
@@ -1824,7 +1824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
-  moneyscript: {fileID: 0}
+  moneyscript: {fileID: 1213619389}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &934989312
 SpriteRenderer:
@@ -2036,7 +2036,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
-  moneyscript: {fileID: 0}
+  moneyscript: {fileID: 1213619389}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &1026815659
 SpriteRenderer:
@@ -2183,7 +2183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
-  moneyscript: {fileID: 0}
+  moneyscript: {fileID: 1213619389}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &1027656910
 SpriteRenderer:
@@ -2407,7 +2407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
-  moneyscript: {fileID: 0}
+  moneyscript: {fileID: 1213619389}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &1063933313
 SpriteRenderer:
@@ -2554,7 +2554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
-  moneyscript: {fileID: 0}
+  moneyscript: {fileID: 1213619389}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &1065646506
 SpriteRenderer:
@@ -2701,7 +2701,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
-  moneyscript: {fileID: 0}
+  moneyscript: {fileID: 1213619389}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &1093733757
 SpriteRenderer:
@@ -2848,7 +2848,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
-  moneyscript: {fileID: 0}
+  moneyscript: {fileID: 1213619389}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &1108058489
 SpriteRenderer:
@@ -4197,7 +4197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
-  moneyscript: {fileID: 0}
+  moneyscript: {fileID: 1213619389}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &1474937847
 SpriteRenderer:
@@ -4557,7 +4557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
-  moneyscript: {fileID: 0}
+  moneyscript: {fileID: 1213619389}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &1591650885
 SpriteRenderer:
@@ -4821,7 +4821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
-  moneyscript: {fileID: 0}
+  moneyscript: {fileID: 1213619389}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &1628568895
 SpriteRenderer:
@@ -4973,7 +4973,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileDifference: 0.05
   regularZombie: {fileID: 3641343504693535643, guid: 24a49cbf0bfc1b94786e27be8da82df6, type: 3}
-  moneyscript: {fileID: 0}
+  moneyscript: {fileID: 1213619389}
   shieldZombie: {fileID: 5058830991117891425, guid: 28b998dba2b56a246854a7b35744aacf, type: 3}
 --- !u!212 &1779841984
 SpriteRenderer:
