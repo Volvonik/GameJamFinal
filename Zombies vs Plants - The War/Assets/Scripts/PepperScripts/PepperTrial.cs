@@ -11,6 +11,7 @@ public class PepperTrial : MonoBehaviour
     public float damage = 13f;
 
     public ParticleSystem dieEffect;
+    public ParticleSystem eatingEffect;
 
     private void Update()
     {
@@ -23,6 +24,7 @@ public class PepperTrial : MonoBehaviour
     void Die()
     {
         dieEffect.Play();
+        eatingEffect.Stop();
 
         Destroy(gameObject);
 
@@ -34,6 +36,16 @@ public class PepperTrial : MonoBehaviour
         if (collision.gameObject.tag == "Zombie")
         {
             health -= Time.deltaTime;
+
+            eatingEffect.Play();
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Zombie")
+        {
+            eatingEffect.Stop();
         }
     }
 
