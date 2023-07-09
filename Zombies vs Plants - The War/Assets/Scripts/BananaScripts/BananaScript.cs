@@ -6,6 +6,7 @@ public class BananaScript : MonoBehaviour
 {
     public GameObject myBanana;
     public ParticleSystem dieEffecct;
+    public ParticleSystem eatingEffect;
 
     public float health = 3f;
     void Update()
@@ -20,13 +21,16 @@ public class BananaScript : MonoBehaviour
         if (collision.gameObject.tag == "Zombie")
         {
             health -= Time.deltaTime;
+            eatingEffect.Play();
         }
     }
     void Die()
     {
-        
+        eatingEffect.Stop();
         dieEffecct.Play();
-
-        Destroy(myBanana);
+        Destroy(gameObject);
     }
+        
+                
+ 
 }
