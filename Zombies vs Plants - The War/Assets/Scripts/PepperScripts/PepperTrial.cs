@@ -10,14 +10,23 @@ public class PepperTrial : MonoBehaviour
 
     public float damage = 13f;
 
+    public ParticleSystem dieEffect;
+
     private void Update()
     {
         if (health <= 0)
         {
-            Destroy(gameObject);
-
-            zombieScript.TakeDamage(damage);
+            Die();
         }
+    }
+
+    void Die()
+    {
+        dieEffect.Play();
+
+        Destroy(gameObject);
+
+        zombieScript.TakeDamage(damage);
     }
 
     private void OnCollisionStay2D(Collision2D collision)
