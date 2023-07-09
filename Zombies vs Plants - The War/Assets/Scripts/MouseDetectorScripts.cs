@@ -47,6 +47,7 @@ public float tileDifference = 0.05f;
             spawnTimer = 0f;
             if (currentZombie == regularZombie && moneyscript.money >= 40f)
             {
+                winlos.zombieCounter += 1;
                 moneyscript.AddMoney(-40f); 
                 Instantiate(currentZombie, zombieSpawnPosition, transform.rotation);
             }
