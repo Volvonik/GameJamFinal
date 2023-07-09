@@ -172,10 +172,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfdfb1bcb5cb6cf41b57c2679bf1ead2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zombieSpeed: -25
+  zombieSpeed: -20
   slowedSpeed: -15
   isDead: 0
-  zombieHealth: 12
+  zombieHealth: 18
 --- !u!95 &2506083662729155545
 Animator:
   serializedVersion: 5
