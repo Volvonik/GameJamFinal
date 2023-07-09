@@ -433,7 +433,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &216840507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2776,7 +2776,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1113315095}
   m_LocalRotation: {x: -1, y: -0, z: -0, w: 0}
-  m_LocalPosition: {x: 0.33, y: 0, z: 0}
+  m_LocalPosition: {x: 0.301, y: 0.029, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4165,6 +4165,10 @@ PrefabInstance:
     - target: {fileID: 1077000208979700168, guid: 0a6ed89ba49e03f428ec5f266c14ebb7, type: 3}
       propertyPath: m_Name
       value: Pepper
+      objectReference: {fileID: 0}
+    - target: {fileID: 4701607307702290168, guid: 0a6ed89ba49e03f428ec5f266c14ebb7, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5246510807574347880, guid: 0a6ed89ba49e03f428ec5f266c14ebb7, type: 3}
       propertyPath: m_RootOrder

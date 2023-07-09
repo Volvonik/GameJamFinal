@@ -48,13 +48,13 @@ public class ZombieMovement : MonoBehaviour
     {
         if (other.tag == "YellowBullet")
         {
-            zombieHealth -= 3f;
+            TakeDamge(3f);
             print(zombieHealth);
         }
         if (other.tag == "BlueBullet")
         {
             zombieSpeed = slowedSpeed;
-            zombieHealth -= 1;
+            TakeDamge(1f);
             Invoke("restorespeed", 3);
         }
     }
@@ -72,5 +72,8 @@ public class ZombieMovement : MonoBehaviour
     private void restorespeed()
     {
         zombieSpeed = -70;
+    }
+    public void TakeDamge(float damage){
+        zombieHealth -= damage;
     }
 }
