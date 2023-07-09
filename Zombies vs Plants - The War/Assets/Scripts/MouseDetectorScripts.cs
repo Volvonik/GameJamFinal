@@ -26,12 +26,12 @@ public class MouseDetectorScripts : MonoBehaviour
         if (ZombieTypeDetector.selectedZombie == "RegularZombie")
         {
             currentZombie = regularZombie;
-            moneyscript.AddMoney(-40f); 
+            //moneyscript.AddMoney(-40f); 
         }
         else if (ZombieTypeDetector.selectedZombie == "ShieldZombie")
         {
             currentZombie = shieldZombie;
-            moneyscript.AddMoney(-80f);
+            //moneyscript.AddMoney(-80f);
         }
         
 
