@@ -17,7 +17,6 @@ public class ZombieMovement : MonoBehaviour
 
     public float yellowPlantDamage = 3f;
     public float bluePlantDamage = 1f;
-    public float pepperDamage = 13f;
 
 
     private void Start()
