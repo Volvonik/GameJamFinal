@@ -14,10 +14,6 @@ public class ZombieTypeDetector : MonoBehaviour
 
     float moneyAmount;
 
-    void Start(){
-        moneyText = FindObjectOfType<AmountText>();
-    }
-    
     void Update()
     {
         moneyAmount =  moneyScript.money;
