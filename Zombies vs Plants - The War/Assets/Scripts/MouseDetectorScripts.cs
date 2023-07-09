@@ -17,6 +17,15 @@ public class MouseDetectorScripts : MonoBehaviour
 
     private void Update()
     {
+        if (ZombieTypeDetector.selectedZombie == "RegularZombie")
+        {
+            currentZombie = regularZombie;
+        }
+        else if (ZombieTypeDetector.selectedZombie == "ShieldZombie")
+        {
+            currentZombie = shieldZombie;
+        }
+
         zombieSpawnPosition = new Vector3(transform.position.x, transform.position.y + tileDifference, transform.position.z);
 
         spawnTimer += Time.deltaTime;
@@ -26,7 +35,7 @@ public class MouseDetectorScripts : MonoBehaviour
     {
         if (spawnTimer >= spawnRateTimer)
         {
-            Instantiate(regularZombie, zombieSpawnPosition, transform.rotation);
+            Instantiate(currentZombie, zombieSpawnPosition, transform.rotation);
             spawnTimer = 0f;
         }
     }
